@@ -3,7 +3,7 @@ from llm_utils.usages.lean_formalize import *
 
 if __name__ == '__main__':
 
-    from Tools.save_print import capture_output_to_file
+    from utils.save_print import capture_output_to_file
     from time import time
 
     with capture_output_to_file(f'output/Demo'):
