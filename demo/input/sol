@@ -1,0 +1,19 @@
+(1)【解】由题意可画出积分区域如下: \\
+\includegraphics[width=.3\textwidth]{figs/95fdecd3-e3d4-4b31-a580-6d05bfd9f694-14_323_348_904_863}
+
+$$
+\begin{aligned}
+b & =\iint_{D}|x y-1| {d} \sigma=\iint_{D_{1}}(x y-1) {d} \sigma+\iint_{D_{2}}(1-x y) {d} \sigma \\
+& =\iint_{D}(1-x y) {d} \sigma+2 \iint_{D_{1}}(x y-1) {d} \sigma \\
+& =\int_{0}^{2} {~d} x \int_{0}^{2}(1-x y) {d} y+2 \int_{\frac{1}{2}}^{2} {~d} x \int_{\frac{1}{x}}^{2}(x y-1) {d} y \\
+& =\dfrac{3}{2}+2 \ln 2
+\end{aligned}
+$$
+
+(2)(反证法)若 $|f(x, y)| \leqslant \dfrac{1}{b},(x, y) \in D$. 因为
+
+$$
+1=\left|\iint_{D}(x y-1) f(x, y) {d} \sigma\right| \leqslant\left|\iint_{D}(x y-1)\right| f(x, y)| | {d} \sigma<\dfrac{1}{b} \iint_{D}(x y-1) {d} \sigma=1,
+$$
+
+产生矛盾, 原假设错误, 所以存在 $(\xi, \eta) \in D$, 使 $|f(\xi, \eta)| \geqslant \dfrac{1}{b}$.
